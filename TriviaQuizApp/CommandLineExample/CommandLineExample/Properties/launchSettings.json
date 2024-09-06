@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CommandLineExample": {
+      "commandName": "Project",
+      "commandLineArgs": "2 3 alex \"hello world\""
+    }
+  }
+}

@@ -1,0 +1,79 @@
+﻿<Window x:Class="CS_Conference_WPF.Views.VisitorsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CS_Conference_WPF.Views"
+        mc:Ignorable="d"
+        Title="CS Conference - Visitors" Height="450" Width="550"
+        WindowStartupLocation="CenterScreen" >
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        
+        <!-- Banner -->
+        <StackPanel Orientation="Horizontal" Grid.ColumnSpan="4" Margin="10">
+            <Image Source="/Images/ConferenceInformation.jpg" Height="70"/>
+            <TextBlock Text="CS - Conference Visitors" FontSize="42"/>
+        </StackPanel>
+        
+        <!-- Label Visitors -->
+        <Label Content="Visitor's Form" FontWeight="Bold" 
+               Grid.Row="1" Grid.ColumnSpan="2" 
+               HorizontalAlignment="Center"/>
+        
+        <!-- Name -->
+        <Label Content="Name" Grid.Row="2" Grid.Column="0" Margin="0,0,0,10"/>
+        <TextBox Grid.Row="2" Grid.Column="1" Width="150" Margin="0,0,0,10"/>
+
+        <!-- Status -->
+        <Label Content="Status" Grid.Row="3" Grid.Column="0" Margin="0,0,0,10"/>
+        <StackPanel Grid.Row="3" Grid.Column="1" Margin="0,0,0,10">
+            <RadioButton Content="Teacher"/>
+            <RadioButton Content="Student"/>
+            <RadioButton Content="Professional"/>
+        </StackPanel>
+
+
+        <!-- Speaker -->
+        <Label Content="Speaker" Grid.Row="4" Grid.Column="0" Margin="0,0,0,10"/>
+        <CheckBox Content="Are you a speaker?" Grid.Row="4" Grid.Column="1" 
+                  Margin="0,6,0,10"/>
+
+        <!-- Date -->
+        <Label Content="Checkin Date" Grid.Row="5" Grid.Column="0" Margin="0,0,0,10"/>
+        <DatePicker Grid.Row="5" Grid.Column="1" />
+        
+        <!-- Buttons -->
+        <Grid Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" Margin="5,15">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Content="Submit" Margin="3"/>
+            <Button Content="Clear" Grid.Column="1" Margin="3"/>
+            
+        </Grid>
+
+
+
+
+
+
+    </Grid>
+</Window>

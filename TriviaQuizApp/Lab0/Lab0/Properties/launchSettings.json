@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Lab0": {
+      "commandName": "Project",
+      "commandLineArgs": "10a C:\\Temp\\sec1.txt C:\\Temp\\Sec1.out"
+    }
+  }
+}
